@@ -1,0 +1,446 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File FileFormat="23" RecordLimit="">odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* 
+from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend</File>
+          <FormatSpecificOptions>
+            <SingleRowFetch>False</SingleRowFetch>
+            <ReadCentroids>False</ReadCentroids>
+            <TableStyle>Quoted</TableStyle>
+            <CacheData>False</CacheData>
+            <SessionReadOnly>True</SessionReadOnly>
+            <ReadUncommitted>False</ReadUncommitted>
+            <NoProgress>True</NoProgress>
+            <PostSQL />
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <PreSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=DAMG7370
+Query=select DAMG7370_iowa.dbo.Stg...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Invoice_Item_Number" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="Date" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="Store_Number" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Int32" />
+            <Field name="Store_Name" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="Address" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="City" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="Zip_Code" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="Store_Location" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="County_Number" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="County" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="Category" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Int32" />
+            <Field name="Category_Name" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="Vendor_Number" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="Vendor_Name" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="Item_Number" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Int32" />
+            <Field name="Item_Description" size="254" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="V_String" />
+            <Field name="Pack" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Int32" />
+            <Field name="Bottle_Volume__ml" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Int32" />
+            <Field name="State_Bottle_Cost" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Double" />
+            <Field name="State_Bottle_Retail" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Double" />
+            <Field name="Bottles_Sold" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Int32" />
+            <Field name="Sale__Dollars" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Double" />
+            <Field name="Volume_Sold__Liters" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Double" />
+            <Field name="Volume_Sold__Gallons" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="Double" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=DAMG7370|||select DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend.* &#xA;from DAMG7370_iowa.dbo.Stg_iowa_liquor_sale_talend" type="DateTime" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="342" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowDirectory]" field="DI_WorkFlowDirectory" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_WorkFlowFile" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkFlowDirectory = [Engine.WorkflowDirectory]
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="66" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" FileFormat="23">odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* 
+from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx</File>
+          <FormatSpecificOptions>
+            <PreSQL />
+            <ReadCentroids>False</ReadCentroids>
+            <PreSQLOnConfig>True</PreSQLOnConfig>
+            <NoProgress>True</NoProgress>
+            <SessionReadOnly>True</SessionReadOnly>
+            <CacheData>False</CacheData>
+            <TableStyle>Quoted</TableStyle>
+            <ReadUncommitted>False</ReadUncommitted>
+            <PostSQL />
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DSN=MYSQL_DAMG7370
+Query=select damg7370_iowa_liquor....</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Item_Number" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="Category_Name" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="Item_Description" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="Vendor" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="Vendor_Name" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="Bottle_Volume_ml" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="Pack" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="Inner_Pack" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="Age" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="Proof" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="List_Date" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="UPC" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="SCC" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="State_Bottle_Cost" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="State_Case_Cost" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="State_Bottle_Retail" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="Report_Date" size="254" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="V_WString" />
+            <Field name="DI_CreateDate" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="DateTime" />
+            <Field name="DI_WorkflowFileName" size="64" source="File: odbc:DSN=MYSQL_DAMG7370|||select damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx.* &#xA;from damg7370_iowa_liquor.stg_iowa_liquor_products_alteryx" type="WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="366" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="DI_CreateDate" size="19" type="DateTime" />
+            <FormulaField expression="[Engine.WorkflowDirectory]" field="DI_WorkFlowDirectory" size="1073741823" type="V_WString" />
+            <FormulaField expression="[Engine.WorkflowFileName]" field="DI_WorkFlowFile" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DI_CreateDate = DateTimeNow()
+DI_WorkFlowDirectory = [Engine.WorkflowDirectory]
+...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="162" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Item_Number","Category_Name","Item_Description","Vendor","Vendor_Name","Bottle_Volume_ml","Pack","Inner_Pack","Age","Proof","List_Date","UPC","SCC","State_Bottle_Cost","State_Case_Cost","State_Bottle_Retail","Report_Date","DI_CreateDate","DI_WorkflowFileName"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="258" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Item_Number" selected="True" />
+            <SelectField field="Category_Name" selected="True" />
+            <SelectField field="Item_Description" selected="True" />
+            <SelectField field="Bottle_Volume_ml" selected="True" />
+            <SelectField field="Pack" selected="True" />
+            <SelectField field="Inner_Pack" selected="True" />
+            <SelectField field="Age" selected="True" />
+            <SelectField field="Proof" selected="True" />
+            <SelectField field="List_Date" selected="True" />
+            <SelectField field="UPC" selected="True" />
+            <SelectField field="SCC" selected="True" />
+            <SelectField field="State_Bottle_Cost" selected="True" />
+            <SelectField field="State_Case_Cost" selected="True" />
+            <SelectField field="State_Bottle_Retail" selected="True" />
+            <SelectField field="Report_Date" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="150" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">True</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Invoice_Item_Number","Date","Store_Number","Store_Name","Address","City","Zip_Code","Store_Location","County_Number","County","Category","Category_Name","Vendor_Number","Vendor_Name","Item_Number","Item_Description","Pack","Bottle_Volume__ml","State_Bottle_Cost","State_Bottle_Retail","Bottles_Sold","Sale__Dollars","Volume_Sold__Liters","Volume_Sold__Gallons","DI_CreateDate"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="246" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Vendor_Number" selected="True" />
+            <SelectField field="Vendor_Name" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="449" y="256" width="392" height="210" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 9</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="582" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>VendorSK</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Unique.Unique">
+            <Position x="474" y="305" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <UniqueFields>
+                <Field field="Vendor_Number" />
+                <Field field="Vendor_Name" />
+              </UniqueFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnique" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="714" y="306" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=MYSQL_DAMG7370|||damg7370_iowa_liquor.DI_Vendor</File>
+              <Passwords />
+              <FormatSpecificOptions>
+                <TransactionSize>10000</TransactionSize>
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <PostSQL />
+                <SpatialObjSize>8000</SpatialObjSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+                <TransactionMessages>False</TransactionMessages>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=MYSQL_DAMG7370
+Query=damg7370_iowa_liquor.DI_Vend...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="21" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="19" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output26" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output26" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Unique" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DataPrepartion_iowa_liquor</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="edf13c15-8ab6-44fd-acc1-192d776f8d3f" />
+      <Telemetry>
+        <PreviousWorkflowId value="52fdaacd-5f31-4955-9f18-0e4f080adef8" />
+        <OriginWorkflowId value="52fdaacd-5f31-4955-9f18-0e4f080adef8" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

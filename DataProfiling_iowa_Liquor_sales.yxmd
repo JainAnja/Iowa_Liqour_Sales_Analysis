@@ -1,0 +1,2390 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="49">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="1519" width="540" height="207" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2018_Iowa_Sales</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="47">
+          <GuiSettings>
+            <Position x="224" y="1568" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice/Item Number","Date","Store Number","Store Name","Address","City","Zip Code","Store Location","County Number","County","Category","Category Name","Vendor Number","Vendor Name","Item Number","Item Description","Pack","Bottle Volume (ml)","State Bottle Cost","State Bottle Retail","Bottles Sold","Sale (Dollars)","Volume Sold (Liters)","Volume Sold (Gallons)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="46">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="356" y="1568" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Invoice/Item Number" />
+                <Field name="Date" />
+                <Field name="Store Number" />
+                <Field name="Store Name" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="Zip Code" />
+                <Field name="Store Location" />
+                <Field name="County Number" />
+                <Field name="County" />
+                <Field name="Category" />
+                <Field name="Category Name" />
+                <Field name="Vendor Number" />
+                <Field name="Vendor Name" />
+                <Field name="Item Number" />
+                <Field name="Item Description" />
+                <Field name="Pack" />
+                <Field name="Bottle Volume (ml)" />
+                <Field name="State Bottle Cost" />
+                <Field name="State Bottle Retail" />
+                <Field name="Bottles Sold" />
+                <Field name="Sale (Dollars)" />
+                <Field name="Volume Sold (Liters)" />
+                <Field name="Volume Sold (Gallons)" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression>regex_replace(
+replace([_CurrentField_]," ","_")
+,"[\W]","")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="InvoiceItem_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Date" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Address" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="City" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Zip_Code" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Location" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Description" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Pack" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottle_Volume_ml" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Cost" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Retail" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottles_Sold" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Sale_Dollars" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Liters" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Gallons" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="45">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="1568" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2018_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2018_Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="79">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="1580" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>4ACD35365AE78BC80A38EC81E0C0EDA4EA9601C0BA641DCBB46A2</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="283" width="541" height="207" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2013_Iowa_sale</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="70">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="344" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>406D86BE79CF4C3ACA4B117A7D01483D19D0C9792B52E</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="332" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2013_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2013_Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="344" y="344" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Invoice/Item Number" />
+                <Field name="Date" />
+                <Field name="Store Number" />
+                <Field name="Store Name" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="Zip Code" />
+                <Field name="Store Location" />
+                <Field name="County Number" />
+                <Field name="County" />
+                <Field name="Category" />
+                <Field name="Category Name" />
+                <Field name="Vendor Number" />
+                <Field name="Vendor Name" />
+                <Field name="Item Number" />
+                <Field name="Item Description" />
+                <Field name="Pack" />
+                <Field name="Bottle Volume (ml)" />
+                <Field name="State Bottle Cost" />
+                <Field name="State Bottle Retail" />
+                <Field name="Bottles Sold" />
+                <Field name="Sale (Dollars)" />
+                <Field name="Volume Sold (Liters)" />
+                <Field name="Volume Sold (Gallons)" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression>regex_replace(
+replace([_CurrentField_]," ","_")
+,"[\W]","")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="InvoiceItem_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Date" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Address" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="City" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Zip_Code" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Location" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Description" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Pack" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottle_Volume_ml" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Cost" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Retail" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottles_Sold" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Sale_Dollars" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Liters" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Gallons" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="13">
+          <GuiSettings>
+            <Position x="176" y="332" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice/Item Number","Date","Store Number","Store Name","Address","City","Zip Code","Store Location","County Number","County","Category","Category Name","Vendor Number","Vendor Name","Item Number","Item Description","Pack","Bottle Volume (ml)","State Bottle Cost","State Bottle Retail","Bottles Sold","Sale (Dollars)","Volume Sold (Liters)","Volume Sold (Gallons)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="2527" width="540" height="207" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Container 69</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="66">
+          <GuiSettings>
+            <Position x="236" y="2576" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice_Item_Number","Date","Store_Number","Store_Name","Address","City","Zip_Code","Store_Location","County_Number","County","Category","Category_Name","Vendor_Number","Vendor_Name","Item_Number","Item_Description","Pack","Bottle_Volume_ml","State_Bottle_Cost","State_Bottle_Retail","Bottles_Sold","Sale_Dollars","Volume_Sold_Liters","Volume_Sold_Gallons"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="2576" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2022_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice_Item_Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Store_Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Store_Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Zip_Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Store_Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="County_Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Category_Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Vendor_Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Vendor_Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Item_Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Item_Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Bottle_Volume_ml" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="State_Bottle_Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="State_Bottle_Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Bottles_Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Sale_Dollars" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Volume_Sold_Liters" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+                <Field name="Volume_Sold_Gallons" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2022_Iowa_Liquor_Sales.tsv" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="83">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="368" y="2576" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Invoice_Item_Number" selected="True" rename="InvoiceItem_Number" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="84">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="2588" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>4ACD35365AE78BC80A38EC81E0C0EDA4EA9601C0BA641DCBB46A2</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="59">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="2011" width="540" height="219" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2020_Iowa_sales</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="56">
+          <GuiSettings>
+            <Position x="224" y="2060" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice/Item Number","Date","Store Number","Store Name","Address","City","Zip Code","Store Location","County Number","County","Category","Category Name","Vendor Number","Vendor Name","Item Number","Item Description","Pack","Bottle Volume (ml)","State Bottle Cost","State Bottle Retail","Bottles Sold","Sale (Dollars)","Volume Sold (Liters)","Volume Sold (Gallons)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="57">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="356" y="2060" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Invoice/Item Number" />
+                <Field name="Date" />
+                <Field name="Store Number" />
+                <Field name="Store Name" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="Zip Code" />
+                <Field name="Store Location" />
+                <Field name="County Number" />
+                <Field name="County" />
+                <Field name="Category" />
+                <Field name="Category Name" />
+                <Field name="Vendor Number" />
+                <Field name="Vendor Name" />
+                <Field name="Item Number" />
+                <Field name="Item Description" />
+                <Field name="Pack" />
+                <Field name="Bottle Volume (ml)" />
+                <Field name="State Bottle Cost" />
+                <Field name="State Bottle Retail" />
+                <Field name="Bottles Sold" />
+                <Field name="Sale (Dollars)" />
+                <Field name="Volume Sold (Liters)" />
+                <Field name="Volume Sold (Gallons)" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression>regex_replace(
+replace([_CurrentField_]," ","_")
+,"[\W]","")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="InvoiceItem_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Date" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Address" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="City" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Zip_Code" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Location" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Description" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Pack" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottle_Volume_ml" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Cost" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Retail" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottles_Sold" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Sale_Dollars" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Liters" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Gallons" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="58">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="2060" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2020_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2020_Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="81">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="2084" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>4ACD35365AE78BC80A38EC81E0C0EDA4EA9601C0BA641DCBB46A2</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="56" y="54" width="539" height="208" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2012_Iowa_sale</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="81" y="104" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2012_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2012_Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="320" y="116" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression><![CDATA[regex_replace(
+replace([_CurrentField_]," ","_")
+,"[\W]","")
+]]></Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="2">
+          <GuiSettings>
+            <Position x="188" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice/Item Number","Date","Store Number","Store Name","Address","City","Zip Code","Store Location","County Number","County","Category","Category Name","Vendor Number","Vendor Name","Item Number","Item Description","Pack","Bottle Volume (ml)","State Bottle Cost","State Bottle Retail","Bottles Sold","Sale (Dollars)","Volume Sold (Liters)","Volume Sold (Gallons)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">True</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="116" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>406D86BE79CF4C3ACA4B117A7D01483D19D0C9792B52E</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Overwrite</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="547" width="540" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2014_Iowa_sales</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="20">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="602" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2014_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2014_Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="22">
+          <GuiSettings>
+            <Position x="178" y="602" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice/Item Number","Date","Store Number","Store Name","Address","City","Zip Code","Store Location","County Number","County","Category","Category Name","Vendor Number","Vendor Name","Item Number","Item Description","Pack","Bottle Volume (ml)","State Bottle Cost","State Bottle Retail","Bottles Sold","Sale (Dollars)","Volume Sold (Liters)","Volume Sold (Gallons)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="21">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="320" y="596" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Invoice/Item Number" />
+                <Field name="Date" />
+                <Field name="Store Number" />
+                <Field name="Store Name" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="Zip Code" />
+                <Field name="Store Location" />
+                <Field name="County Number" />
+                <Field name="County" />
+                <Field name="Category" />
+                <Field name="Category Name" />
+                <Field name="Vendor Number" />
+                <Field name="Vendor Name" />
+                <Field name="Item Number" />
+                <Field name="Item Description" />
+                <Field name="Pack" />
+                <Field name="Bottle Volume (ml)" />
+                <Field name="State Bottle Cost" />
+                <Field name="State Bottle Retail" />
+                <Field name="Bottles Sold" />
+                <Field name="Sale (Dollars)" />
+                <Field name="Volume Sold (Liters)" />
+                <Field name="Volume Sold (Gallons)" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression>regex_replace(
+replace([_CurrentField_]," ","_")
+,"[\W]","")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="InvoiceItem_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Date" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Address" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="City" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Zip_Code" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Location" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Description" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Pack" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottle_Volume_ml" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Cost" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Retail" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottles_Sold" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Sale_Dollars" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Liters" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Gallons" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="596" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>4ACD35365AE78BC80A38EC81E0C0EDA4EA9601C0BA641DCBB46A2</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="56" y="781" width="539" height="213" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2015_Iowa_sale</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="27">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="81" y="830" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2015_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2015_Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="29">
+          <GuiSettings>
+            <Position x="176" y="836" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice/Item Number","Date","Store Number","Store Name","Address","City","Zip Code","Store Location","County Number","County","Category","Category Name","Vendor Number","Vendor Name","Item Number","Item Description","Pack","Bottle Volume (ml)","State Bottle Cost","State Bottle Retail","Bottles Sold","Sale (Dollars)","Volume Sold (Liters)","Volume Sold (Gallons)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="75">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="308" y="836" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Invoice/Item Number" />
+                <Field name="Date" />
+                <Field name="Store Number" />
+                <Field name="Store Name" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="Zip Code" />
+                <Field name="Store Location" />
+                <Field name="County Number" />
+                <Field name="County" />
+                <Field name="Category" />
+                <Field name="Category Name" />
+                <Field name="Vendor Number" />
+                <Field name="Vendor Name" />
+                <Field name="Item Number" />
+                <Field name="Item Description" />
+                <Field name="Pack" />
+                <Field name="Bottle Volume (ml)" />
+                <Field name="State Bottle Cost" />
+                <Field name="State Bottle Retail" />
+                <Field name="Bottles Sold" />
+                <Field name="Sale (Dollars)" />
+                <Field name="Volume Sold (Liters)" />
+                <Field name="Volume Sold (Gallons)" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression>regex_replace(
+replace([_CurrentField_]," ","_")
+,"[\W]","")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="InvoiceItem_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Date" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Address" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="City" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Zip_Code" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Location" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Description" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Pack" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottle_Volume_ml" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Cost" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Retail" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottles_Sold" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Sale_Dollars" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Liters" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Gallons" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="76">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="848" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>4ACD35365AE78BC80A38EC81E0C0EDA4EA9601C0BA641DCBB46A2</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="1027" width="540" height="207" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2016_Iowa_sales</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="33">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="1076" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2016_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2016_Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="34">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="320" y="1076" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Invoice/Item Number" />
+                <Field name="Date" />
+                <Field name="Store Number" />
+                <Field name="Store Name" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="Zip Code" />
+                <Field name="Store Location" />
+                <Field name="County Number" />
+                <Field name="County" />
+                <Field name="Category" />
+                <Field name="Category Name" />
+                <Field name="Vendor Number" />
+                <Field name="Vendor Name" />
+                <Field name="Item Number" />
+                <Field name="Item Description" />
+                <Field name="Pack" />
+                <Field name="Bottle Volume (ml)" />
+                <Field name="State Bottle Cost" />
+                <Field name="State Bottle Retail" />
+                <Field name="Bottles Sold" />
+                <Field name="Sale (Dollars)" />
+                <Field name="Volume Sold (Liters)" />
+                <Field name="Volume Sold (Gallons)" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression>regex_replace(
+replace([_CurrentField_]," ","_")
+,"[\W]","")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="InvoiceItem_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Date" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Address" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="City" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Zip_Code" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Location" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Description" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Pack" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottle_Volume_ml" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Cost" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Retail" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottles_Sold" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Sale_Dollars" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Liters" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Gallons" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="35">
+          <GuiSettings>
+            <Position x="212" y="1076" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice/Item Number","Date","Store Number","Store Name","Address","City","Zip Code","Store Location","County Number","County","Category","Category Name","Vendor Number","Vendor Name","Item Number","Item Description","Pack","Bottle Volume (ml)","State Bottle Cost","State Bottle Retail","Bottles Sold","Sale (Dollars)","Volume Sold (Liters)","Volume Sold (Gallons)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="77">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="1088" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>4ACD35365AE78BC80A38EC81E0C0EDA4EA9601C0BA641DCBB46A2</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="1291" width="540" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2017_Iowa_sales</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="41">
+          <GuiSettings>
+            <Position x="212" y="1340" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice/Item Number","Date","Store Number","Store Name","Address","City","Zip Code","Store Location","County Number","County","Category","Category Name","Vendor Number","Vendor Name","Item Number","Item Description","Pack","Bottle Volume (ml)","State Bottle Cost","State Bottle Retail","Bottles Sold","Sale (Dollars)","Volume Sold (Liters)","Volume Sold (Gallons)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="40">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="344" y="1340" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Invoice/Item Number" />
+                <Field name="Date" />
+                <Field name="Store Number" />
+                <Field name="Store Name" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="Zip Code" />
+                <Field name="Store Location" />
+                <Field name="County Number" />
+                <Field name="County" />
+                <Field name="Category" />
+                <Field name="Category Name" />
+                <Field name="Vendor Number" />
+                <Field name="Vendor Name" />
+                <Field name="Item Number" />
+                <Field name="Item Description" />
+                <Field name="Pack" />
+                <Field name="Bottle Volume (ml)" />
+                <Field name="State Bottle Cost" />
+                <Field name="State Bottle Retail" />
+                <Field name="Bottles Sold" />
+                <Field name="Sale (Dollars)" />
+                <Field name="Volume Sold (Liters)" />
+                <Field name="Volume Sold (Gallons)" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression>regex_replace(
+replace([_CurrentField_]," ","_")
+,"[\W]","")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="InvoiceItem_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Date" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Address" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="City" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Zip_Code" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Location" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Description" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Pack" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottle_Volume_ml" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Cost" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Retail" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottles_Sold" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Sale_Dollars" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Liters" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Gallons" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="39">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="1340" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2017_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2017_Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="78">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="1340" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>4ACD35365AE78BC80A38EC81E0C0EDA4EA9601C0BA641DCBB46A2</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="1759" width="541" height="219" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2019_Iowa_Sales</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="51">
+          <GuiSettings>
+            <Position x="176" y="1820" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice/Item Number","Date","Store Number","Store Name","Address","City","Zip Code","Store Location","County Number","County","Category","Category Name","Vendor Number","Vendor Name","Item Number","Item Description","Pack","Bottle Volume (ml)","State Bottle Cost","State Bottle Retail","Bottles Sold","Sale (Dollars)","Volume Sold (Liters)","Volume Sold (Gallons)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="52">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="344" y="1808" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Invoice/Item Number" />
+                <Field name="Date" />
+                <Field name="Store Number" />
+                <Field name="Store Name" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="Zip Code" />
+                <Field name="Store Location" />
+                <Field name="County Number" />
+                <Field name="County" />
+                <Field name="Category" />
+                <Field name="Category Name" />
+                <Field name="Vendor Number" />
+                <Field name="Vendor Name" />
+                <Field name="Item Number" />
+                <Field name="Item Description" />
+                <Field name="Pack" />
+                <Field name="Bottle Volume (ml)" />
+                <Field name="State Bottle Cost" />
+                <Field name="State Bottle Retail" />
+                <Field name="Bottles Sold" />
+                <Field name="Sale (Dollars)" />
+                <Field name="Volume Sold (Liters)" />
+                <Field name="Volume Sold (Gallons)" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression>regex_replace(
+replace([_CurrentField_]," ","_")
+,"[\W]","")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="InvoiceItem_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Date" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Address" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="City" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Zip_Code" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Location" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Description" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Pack" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottle_Volume_ml" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Cost" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Retail" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottles_Sold" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Sale_Dollars" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Liters" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Gallons" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="53">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="1820" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2019_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2019_Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="80">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="1832" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>4ACD35365AE78BC80A38EC81E0C0EDA4EA9601C0BA641DCBB46A2</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="64">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="55" y="2287" width="540" height="207" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>2021-Iowa_sales</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="True" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="61">
+          <GuiSettings>
+            <Position x="224" y="2336" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">True</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">"Invoice/Item Number","Date","Store Number","Store Name","Address","City","Zip Code","Store Location","County Number","County","Category","Category Name","Vendor Number","Vendor Name","Item Number","Item Description","Pack","Bottle Volume (ml)","State Bottle Cost","State Bottle Retail","Bottles Sold","Sale (Dollars)","Volume Sold (Liters)","Volume Sold (Gallons)"</Value>
+              <Value name="Check Box (84)">True</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro="Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="62">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="344" y="2336" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>Formula</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="Invoice/Item Number" />
+                <Field name="Date" />
+                <Field name="Store Number" />
+                <Field name="Store Name" />
+                <Field name="Address" />
+                <Field name="City" />
+                <Field name="Zip Code" />
+                <Field name="Store Location" />
+                <Field name="County Number" />
+                <Field name="County" />
+                <Field name="Category" />
+                <Field name="Category Name" />
+                <Field name="Vendor Number" />
+                <Field name="Vendor Name" />
+                <Field name="Item Number" />
+                <Field name="Item Description" />
+                <Field name="Pack" />
+                <Field name="Bottle Volume (ml)" />
+                <Field name="State Bottle Cost" />
+                <Field name="State Bottle Retail" />
+                <Field name="Bottles Sold" />
+                <Field name="Sale (Dollars)" />
+                <Field name="Volume Sold (Liters)" />
+                <Field name="Volume Sold (Gallons)" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression>regex_replace(
+replace([_CurrentField_]," ","_")
+,"[\W]","")</Expression>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="InvoiceItem_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Date" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Address" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="City" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Zip_Code" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Store_Location" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="County" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Category_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Vendor_Name" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Number" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Item_Description" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Pack" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottle_Volume_ml" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Cost" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="State_Bottle_Retail" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Bottles_Sold" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Sale_Dollars" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Liters" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+                <Field name="Volume_Sold_Gallons" size="254" source="Formula: [_CurrentField_]" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+        <Node ToolID="63">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="80" y="2336" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv</File>
+              <FormatSpecificOptions>
+                <HeaderRow>True</HeaderRow>
+                <IgnoreErrors>False</IgnoreErrors>
+                <AllowShareWrite>False</AllowShareWrite>
+                <ImportLine>1</ImportLine>
+                <FieldLen>254</FieldLen>
+                <SingleThreadRead>False</SingleThreadRead>
+                <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+                <Delimeter>\t</Delimeter>
+                <QuoteRecordBreak>False</QuoteRecordBreak>
+                <CodePage>28591</CodePage>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>2021_Iowa_Liquor_Sales.tsv</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Invoice/Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Date" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Address" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="City" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Zip Code" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Store Location" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="County" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Category Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Vendor Name" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Number" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Item Description" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Pack" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottle Volume (ml)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Cost" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="State Bottle Retail" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Bottles Sold" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Sale (Dollars)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Liters)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+                <Field name="Volume Sold (Gallons)" size="254" source="File: C:\Users\Anjali\OneDrive - Northeastern University\DADABI\Group_Assignment_Lowa_Liquor\2021_Iowa_Liquor_Sales.tsv" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="82">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="464" y="2348" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="23">odbc:DSN=DAMG7370;UID=Damg7370_lowa;PWD=__EncPwd1__|||DAMG7370_iowa.dbo.stg_lowa_sales</File>
+              <Passwords>4ACD35365AE78BC80A38EC81E0C0EDA4EA9601C0BA641DCBB46A2</Passwords>
+              <FormatSpecificOptions>
+                <TransactionMessages>False</TransactionMessages>
+                <Geometry>True</Geometry>
+                <Projection />
+                <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+                <SpatialObjSize>8000</SpatialObjSize>
+                <OutputOption>Append</OutputOption>
+                <PostSQL />
+                <TransactionSize>10000</TransactionSize>
+                <TableStyle>Quoted</TableStyle>
+                <PreSQL />
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>DSN=DAMG7370
+Query=DAMG7370_iowa.dbo.stg_lowa_s...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="47" Connection="Output26" />
+      <Destination ToolID="46" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="46" Connection="Output" />
+      <Destination ToolID="79" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="Output" />
+      <Destination ToolID="47" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="13" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Output26" />
+      <Destination ToolID="11" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output26" />
+      <Destination ToolID="83" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="66" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="83" Connection="Output" />
+      <Destination ToolID="84" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="Output26" />
+      <Destination ToolID="57" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output" />
+      <Destination ToolID="81" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="56" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output26" />
+      <Destination ToolID="3" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="22" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output26" />
+      <Destination ToolID="21" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Output" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="29" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output26" />
+      <Destination ToolID="75" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="33" Connection="Output" />
+      <Destination ToolID="35" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Output" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="35" Connection="Output26" />
+      <Destination ToolID="34" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="Output26" />
+      <Destination ToolID="40" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="41" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="51" Connection="Output26" />
+      <Destination ToolID="52" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="Output" />
+      <Destination ToolID="80" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="53" Connection="Output" />
+      <Destination ToolID="51" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="61" Connection="Output26" />
+      <Destination ToolID="62" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="62" Connection="Output" />
+      <Destination ToolID="82" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="63" Connection="Output" />
+      <Destination ToolID="61" Connection="Input2" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>DataProfiling_iowa_Liquor_sales</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="4e5cee73-c36d-497c-8d2e-7f7e2b8b8efa" />
+      <Telemetry>
+        <PreviousWorkflowId value="2b590ae6-5269-422b-bec2-4797b3da0297" />
+        <OriginWorkflowId value="5f5a12b0-ea23-4f0d-90b6-17b60e10699d" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
